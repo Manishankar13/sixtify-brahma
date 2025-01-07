@@ -4,6 +4,7 @@
   "scripts": { 
     "lint": "turbo lint",
     "build": "turbo build",
+    "export": "next build && next export",
     "start": "turbo start",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
     "prepare": "husky install"

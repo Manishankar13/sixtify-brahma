@@ -39,6 +39,10 @@
       "dependsOn": [
         "build"
       ]
+    },
+    "export": {
+      "dependsOn": ["build"],
+      "outputs": ["out/**"]
     }
   }
 }
