@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: build-output
-          path: .next
+          path: ./apps/docs/storybook-static
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
