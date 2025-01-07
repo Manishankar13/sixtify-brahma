@@ -33,7 +33,13 @@ jobs:
       - name: Build Project
         run: pnpm run build
 
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-output
+          path: .next
+
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
         with:
-          folder: .next
+          token: ${{ secrets.GITHUB_TOKEN }}
