@@ -3,6 +3,8 @@
   "version": "0.1.1",
   "scripts": { 
     "lint": "turbo lint",
+    "build": "turbo build",
+    "start": "turbo start",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
     "prepare": "husky install"
   },
