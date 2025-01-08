@@ -33,13 +33,8 @@ jobs:
       - name: Build Project
         run: pnpm run build
 
-      - name: Upload Build Artifact
-        uses: actions/upload-artifact@v3
+      - name: Deploy
+        uses: Manishankar13/sixtify-brahma@0.1.0
         with:
-          name: build-output
-          path: ./apps/docs/storybook-static/index.html
-
-      # - name: Deploy to GitHub Pages
-      #   uses: actions/deploy-pages@v2
-      #   with:
-      #     token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+          folder: apps/docs/storybook-static
