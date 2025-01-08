@@ -34,7 +34,7 @@ jobs:
         run: pnpm run build
 
       - name: Deploy
-        uses: Manishankar13/sixtify-brahma@0.1.0
+        uses: actions/deploy-pages@v2
         with:
           branch: main
           folder: apps/docs/storybook-static
